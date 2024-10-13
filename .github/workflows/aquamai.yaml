@@ -32,11 +32,6 @@ jobs:
           min-retry-interval: 1
           max-retry-interval: 5
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 4.8.x
-
       - name: Build AquaMai
         shell: cmd
         run: |
