@@ -42,7 +42,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.target }}
-          path: AquaMai\Output\net472\AquaMai.dll
+          path: AquaMai\Output\AquaMai.dll
 
       - name: Send to Telegram
         if: github.event_name != 'pull_request'
